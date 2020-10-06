@@ -26,3 +26,9 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+.container {
+  display: grid;
+
+  grid-template-rows: min-content 80vh min-content 40vw repeat(3, min-content);
+}

@@ -9,8 +9,36 @@ html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
+.container {
+  display: grid;
+  grid-template-rows: min-content 80vh min-content 40vw repeat(3, min-content); }
+
 body {
   font-family: "Nunito", sans-serif;
   color: #6D5D4B;
   font-size: 2rem;
   font-weight: 300; }
+
+.sidebar {
+  background-color: #c69963; }
+
+.header {
+  background-color: lightcoral; }
+
+.realtors {
+  background-color: greenyellow; }
+
+.gallery {
+  background-color: springgreen; }
+
+.footer {
+  background-color: #aaa; }
+
+.story__pictures {
+  background-color: orange; }
+
+.story__content {
+  background-color: orangered; }
+
+.features {
+  background-color: olivedrab; }
