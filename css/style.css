@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -19,6 +20,17 @@ body {
   color: #6D5D4B;
   font-size: 1.6rem;
   font-weight: 300; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+  .heading-4--light {
+    color: #f9f7f6; }
+  .heading-4--dark {
+    color: #54483A; }
 
 .sidebar {
   background-color: #c69963;
@@ -53,9 +65,29 @@ body {
 .features {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /*Responsive: use auto-fit tricks, auto-fit creates as many track that
+  it can fit based on width (between 25rem - 1fr as we defined) */
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   column-gap: 6rem;
-  row-gap: 6rem; }
+  row-gap: 6rem;
+  margin: 15rem 0;
+  /* Nhiều đoạn text quá ít dẫn đến việc vertical align bị dư khoảng trống
+  tức là align-items default to center, -> start*/
+  align-items: start; }
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 2.5rem;
+  row-gap: 1.5rem; }
+  .feature__icon {
+    fill: #c69963;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .feature__text {
+    font-size: 1.7rem; }
 
 .homes {
   grid-column: center-start / center-end; }
