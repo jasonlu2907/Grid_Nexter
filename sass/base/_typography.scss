@@ -13,14 +13,33 @@ body {
 .heading-1 {
   @extend %heading;
 }
+
 .heading-2 {
   @extend %heading;
-  
+  font-size: 4rem;
+  font-style: italic;
+
+  &--light {
+    color: $color-primary;
+  }
+  &--dark {
+    color: $color-grey-dark-2;
+  }
 }
+
 .heading-3 {
   @extend %heading;
-  
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  &--light {
+    color: $color-primary;
+  }
+  &--dark {
+    color: $color-primary-dark;
+  }
 }
+
 .heading-4 {
   @extend %heading;
   font-size: 1.9rem;
