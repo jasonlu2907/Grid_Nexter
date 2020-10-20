@@ -1,5 +1,50 @@
 .footer {
-  background-color: $color-grey-light-2;
-
+  background-color: $color-secondary;
   grid-column: full-start / full-end;
+
+  padding: 8rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 2rem;
+
+  align-items: center;
+  justify-items: center;
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    // VERY IMPORTANT, ko co se gay loi xuong dong
+    display: block;
+
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    font-family: $font-display;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  &__link:hover {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-0.5rem);
+  }
+
+  &__text {
+    margin-top: 4rem;
+    text-align: center;
+    // color: $color-grey-light-2;
+    font-size: 1.4rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
