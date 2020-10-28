@@ -25,6 +25,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
+.heading-1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #f9f7f6; }
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic; }
@@ -87,9 +92,27 @@ body {
     transform: translateY(-1.5rem); }
 
 .header {
-  background-color: lightcoral;
+  background-color: #54483A;
   grid-row: 1 / 2;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / col-end 6;
+  padding: 5rem;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)), url(/img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 5rem 1fr;
+  grid-template-columns: max-content;
+  gap: 1rem; }
+  .header__logo {
+    height: 3rem;
+    justify-self: center; }
+  .header__btn {
+    justify-self: start;
+    align-self: flex-start; }
+  .header__seenon-text {
+    font-size: 1.4rem; }
+  .header__seenon-logos img {
+    height: 2.5rem; }
 
 .realtors {
   background-color: greenyellow;
