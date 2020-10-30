@@ -100,7 +100,7 @@ body {
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-rows: 1fr min-content 5rem 1fr;
+  grid-template-rows: 1fr min-content 10rem 1fr;
   grid-template-columns: max-content;
   gap: 1rem; }
   .header__logo {
@@ -110,9 +110,26 @@ body {
     justify-self: start;
     align-self: flex-start; }
   .header__seenon-text {
-    font-size: 1.4rem; }
-  .header__seenon-logos img {
-    height: 2.5rem; }
+    display: grid;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #aaa;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    gap: 2rem; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: currentColor; }
+  .header__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    justify-items: center; }
+    .header__seenon-logos img {
+      height: 2.5rem;
+      filter: brightness(70%); }
 
 .realtors {
   background-color: greenyellow;
