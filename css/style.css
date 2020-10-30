@@ -40,7 +40,9 @@ body {
 
 .heading-3 {
   font-size: 1.6rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #c69963;
+  font-weight: 400; }
   .heading-3--light {
     color: #c69963; }
   .heading-3--dark {
@@ -132,8 +134,34 @@ body {
       filter: brightness(70%); }
 
 .realtors {
-  background-color: greenyellow;
-  grid-column: col-start 7 / -1; }
+  background-color: #101d2c;
+  grid-column: col-start 7 / -1;
+  padding: 3rem;
+  display: grid;
+  /*GREAT EXAMPLE OF JUSTIFY/ALIGN CONTENT VÀ ITEMS*/
+  justify-content: center;
+  align-content: center; }
+  .realtors h3 {
+    text-align: center; }
+  .realtors__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 2rem;
+    row-gap: 5vh;
+    align-items: center; }
+  .realtors__img {
+    height: 6.5rem;
+    border-radius: 50%;
+    display: block; }
+  .realtors__name {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem; }
+  .realtors__exp {
+    color: #aaa;
+    font-size: 1rem;
+    text-transform: uppercase; }
 
 .gallery {
   grid-column: full-start / full-end;
