@@ -5,8 +5,15 @@
 
   display: grid;
   /*GREAT EXAMPLE OF JUSTIFY/ALIGN CONTENT VÀ ITEMS*/
+  // Justify+align content, cột+hàng track sẽ thu hẹp lại nằm ở giữa
+  // Align the track both horizontally+vertically
   justify-content: center;
   align-content: center;
+  // Neu dung justify+align items, track sẽ nở rộng trong khi nội dung sẽ
+  // đc nằm giữa
+  // justify-items - Align 'content' inside 'grid item' along the row axis. 
+  // justify-items: center;
+  // align-items: center;
 
   h3 {
     text-align: center;
