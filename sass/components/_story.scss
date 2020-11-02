@@ -7,6 +7,10 @@
       ),
       url(/img/back.jpg);
     position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__img-1 {
@@ -16,6 +20,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    @media only screen and (max-width: $bp-medium) {
+      width: 40%;
+    }
   }
 
   &__img-2 {
@@ -24,6 +31,9 @@
     top: 50%;
     left: 50%;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    @media only screen and (max-width: $bp-medium) {
+      width: 30%;
+    }
   }
 
   &__content {
@@ -36,6 +46,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    }
   }
 
   &__text {

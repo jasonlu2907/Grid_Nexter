@@ -7,12 +7,12 @@
   display: flex;
   justify-content: center;
 
-  // @media only screen and (max-width: $bp-large) {
-  //   grid-column: 1 / -1;
-  //   grid-row: 1 / 2;
-  //   justify-content: flex-end;
-  // align-items: center;
-  // }
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    align-content: center;
+  }
 }
 
 .nav-btn {
@@ -42,5 +42,14 @@
     transform: translateY(-1.5rem);
   }
 
-  
+  @media only screen and (max-width: $bp-largest) {
+    &::after { height: 2px;}
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin-right: 3rem;
+
+    &::before { transform: translateY(-1.2rem); }
+    &::after { transform: translateY(1.2rem); }
+  }
 }
